@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "AyosPH",
+    "slug": "ayosph",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "ayosph",
+    "splash": {
+      "backgroundColor": "#15803D"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ph.ayosph.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "AyosPH uses your location to pin the exact spot of a reported problem."
+      }
+    },
+    "android": {
+      "package": "ph.ayosph.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#15803D"
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "AyosPH uses your location to pin the exact spot of a reported problem."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "AyosPH needs the camera to photograph the problem you are reporting.",
+          "photosPermission": "AyosPH needs photo access to attach pictures to reports."
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}
